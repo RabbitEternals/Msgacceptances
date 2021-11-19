@@ -1,0 +1,15 @@
+{
+  "name": "gauge-taiko-template",
+  "description": "Starter template for writing JavaScript tests for Gauge",
+  "scripts": {
+    "test": "gauge run specs/",
+    "echo": "gauge run specs/echoxs.spec",
+    "counter": "gauge run specs/counters.spec",
+    "flashcard": "gauge run specs/flashcards.spec",
+    "ledger": "gauge run specs/ledger.spec",
+    "shopping": "gauge run specs/shopping.spec"
+  },
+  "dependencies": {
+    "taiko": "latest"
+  }
+}
