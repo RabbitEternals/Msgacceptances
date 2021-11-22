@@ -44,7 +44,7 @@ gauge.customScreenshotWriter = async function () {
     return path.basename(screenshotFilePath);
 };
 step("Open localhost", async function () {
-    await goto("http://192.168.1.100:8081");
+    await goto("http://localhost:8081/");
 });
 step("Clear local", async function () {
     await evaluate(() => localStorage.clear());
