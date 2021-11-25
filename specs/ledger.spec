@@ -1,35 +1,27 @@
-# Getting Started with Gauge
-
-This is a context step that runs before every scenario
+# Ledger project test
 * Open localhost
 
-## Display number of items
-* Must display "msg@msg.com5"
-* Must display "msg@msg.com6"
-* Must display "msg@msg.com7"
-* Must display "msg@msg.com8"
-* Must display "msg@msg.com9"
-* Click "Next"
-* Must display "msg@msg.com10"
-* Must display "msg@msg.com11"
-* Must display "hello@mail.com"
-* Must display "msg@msg.com"
-* Must display "1234"
-* Click "Previous"
-* Must display "msg@msg.com5"
-* Must display "msg@msg.com6"
-* Must display "msg@msg.com7"
-* Must display "msg@msg.com8"
-* Must display "msg@msg.com9"
+## Display initial 10 cards, clicks next button then shows initial 2 cards then click previous then shows first 10 cards again
+* Verify "card" from "0" to "9" exists
+* Displays "email" "msg@msg.com" from "2" to "11"
+* Displays "message" "hello people" from "2" to "11"
+* Click "nextButton" button
+* Verify "card" from "0" to "1" exists
+* Displays "email" "msg@msg.com" from "0" to "1"
+* Displays "message" "hello people" from "0" to "1"
+* Click "previousButton" button
+* Verify "card" from "0" to "9" exists
+* Displays "email" "msg@msg.com" from "2" to "11"
+* Displays "message" "hello people" from "2" to "11"
+## Displays next button and not previous button at first page, displays previous button and not next button at last page
+* Verify "nextButton" exists
+* Verify "previousButton" button is not visible
+* Click "nextButton" button
+* Verify "previousButton" exists
+* Verify "nextButton" button is not visible
+* Click "previousButton" button
+* Verify "nextButton" exists
+* Verify "previousButton" button is not visible
 
-## Must add word
-* Add word "test@mail.com5" "Email"
-* Add word "test message5" "Message"
-* Click "Add"
-* Refresh page
-* Must display "test@mail.com5"
-* Must display "test message5"
-
-A tear down step for every scenario
 ___
 * Clear local

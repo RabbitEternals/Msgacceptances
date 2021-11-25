@@ -50,7 +50,7 @@ step("Clear local", async function () {
 step("Enter <word> to <field_id> textbox", async function (word,field_id) {
     await write(word,into(textBox({id:field_id})));
 });
-//ECHO--COUNTER--FLASHCARD
+//ECHO--COUNTER--FLASHCARD--LEDGER
 step("Click <button_id> button", async function (button_id) {
     await click(button({id:button_id}),{navigationTimeout:3000});
 });
@@ -66,21 +66,43 @@ step("Must display <word> at <field_id>", async function (word,field_id) {
 //FLASHCARD
 step("Must display <word> at <field_class> class", async function (word,field_class) {
     var content = await evaluate($("."+field_class), (element) => element.textContent);
-    assert.ok(content == word)
+    var visible = await evaluate($("."+field_class), (element) => element.style.visibility);
+    assert.ok(content == word && visible == "visible")
 });
-//FLASHCARD
+//FLASHCARD--LEDGER
 step("Verify <field_id> exists", async function (field_id) {
     assert.ok(await $("#"+field_id).exists());
 });
 //FLASHCARD
-step("Must not display <word> at anywhere", async function (word) {
-    assert.ok(await text(word).isVisible(0,0));
+step("Must not display <word> at <field_class> class", async function (word,field_class) {
+    var content = await evaluate($("."+field_class), (element) => element.style.visibility);
+    console.log(content)
+    assert.ok(content == "hidden");
 });
 //FLASHCARD
 step("Click <field_id> field", async function (field_id) {
     click($("#"+field_id));
 });
-
+//LEDGER
+step("Verify <field_id> from <start> to <stop> exists", async function (field_id,start,stop) {
+    for (let i = start; i < stop; i++) {
+        assert.ok(await $("#"+field_id+i).exists());
+    }
+});
+//LEDGER
+step("Displays <type> <word> from <start> to <stop>", async function (type,word,start,stop) {
+    let decreaseNum=stop;
+    for (let i = start; i < stop; i++) {
+        var content = await evaluate($("#"+type+i), (element) => element.innerText);
+        assert.ok(content == word+decreaseNum);
+        decreaseNum--;
+    }
+});
+//LEDGER
+step("Verify <button_id> button is not visible", async function (button_id) {
+    let visible = await button({id:button_id}).isVisible(0,0);
+    assert.ok(!visible);
+});
 /*
 step("Must display <message>", async function (message) {
     assert.ok(await text(message).exists(0, 0));
