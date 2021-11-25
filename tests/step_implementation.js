@@ -46,7 +46,7 @@ step("Open localhost", async function () {
 step("Clear local", async function () {
     await evaluate(() => localStorage.clear());
 });
-//ECHO--FLASHCARD
+//ECHO--FLASHCARD--LEDGER
 step("Enter <word> to <field_id> textbox", async function (word,field_id) {
     await write(word,into(textBox({id:field_id})));
 });
@@ -78,6 +78,12 @@ step("Must not display <word> at <field_class> class", async function (word,fiel
     var content = await evaluate($("."+field_class), (element) => element.style.visibility);
     console.log(content)
     assert.ok(content == "hidden");
+});
+//LEDGER
+step("Must none display <word> at <field_class> class", async function (word,field_class) {
+    var content = await evaluate($("."+field_class), (element) => element.style.display);
+    console.log(content)
+    assert.ok(content == "none");
 });
 //FLASHCARD
 step("Click <field_id> field", async function (field_id) {

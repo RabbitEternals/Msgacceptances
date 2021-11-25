@@ -22,6 +22,12 @@
 * Click "previousButton" button
 * Verify "nextButton" exists
 * Verify "previousButton" button is not visible
+## Displays error after typing email wrong format and clicking add
+* Must none display "Invalid mail" at "badge" class
+* Enter "notEmailFormat" to "emailField" textbox
+* Enter "Random message" to "messageField" textbox
+* Click "addButton" button
+* Must display "Invalid mail" at "errorSpan"
 
 ___
 * Clear local
