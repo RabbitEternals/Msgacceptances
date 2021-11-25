@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="flashcard test fix and ledger test refactor started">
+    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="ledger test refactor continue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/ledger.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/ledger.spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/shopping.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/shopping.spec" afterDir="false" />
@@ -51,7 +51,7 @@
       <workItem from="1637318189196" duration="4495000" />
       <workItem from="1637564083299" duration="93000" />
       <workItem from="1637735078960" duration="1540000" />
-      <workItem from="1637763773357" duration="15671000" />
+      <workItem from="1637763773357" duration="16675000" />
     </task>
     <task id="LOCAL-00001" summary="All structure">
       <created>1637321513534</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637838202170</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ledger test refactor continue">
+      <created>1637839435529</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637839435529</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +150,7 @@
     <MESSAGE value="counter test refactor" />
     <MESSAGE value="flashcard test refactor" />
     <MESSAGE value="flashcard test fix and ledger test refactor started" />
-    <option name="LAST_COMMIT_MESSAGE" value="flashcard test fix and ledger test refactor started" />
+    <MESSAGE value="ledger test refactor continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="ledger test refactor continue" />
   </component>
 </project>

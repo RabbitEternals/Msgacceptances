@@ -22,12 +22,21 @@
 * Click "previousButton" button
 * Verify "nextButton" exists
 * Verify "previousButton" button is not visible
-## Displays error after typing email wrong format and clicking add
+## Displays error after typing email wrong format and clicking add button
 * Must none display "Invalid mail" at "badge" class
 * Enter "notEmailFormat" to "emailField" textbox
 * Enter "Random message" to "messageField" textbox
 * Click "addButton" button
 * Must display "Invalid mail" at "errorSpan"
+## Displays new card after typing fields in correct format and clicking add button
+* Enter "acTest@mail.com" to "emailField" textbox
+* Enter "acTest message" to "messageField" textbox
+* Click "addButton" button
+* Verify "emailField" empty
+* Verify "messageField" empty
+* Verify "card10" exists
+* Displays "email10" "acTest@mail.com"
+* Displays "message10" "acTest message"
 
 ___
 * Clear local
