@@ -1,22 +1,21 @@
-# Getting Started with Gauge
-This is a context step that runs before every scenario
+# Counter project test
 * Open localhost
 
-## Must display number
-* Must display "0"
-* Click "Increase"
-* Must display "1"
-* Click "Increase"
-* Must display "2"
-* Click "Decrease"
-* Must display "1"
-* Click "Decrease"
-* Must display "0"
-* Click "Decrease"
-* Must display "-1"
-* Click "Decrease"
-* Must display "-2"
+## Should successfully increase and decrease number after clicking buttons
+* Must display "0" at "numberOutput"
+* Click "increaseButton" button
+* Must display "1" at "numberOutput"
+* Click "increaseButton" button
+* Must display "2" at "numberOutput"
+* Click "decreaseButton" button
+* Must display "1" at "numberOutput"
+* Click "decreaseButton" button
+* Must display "0" at "numberOutput"
+* Click "decreaseButton" button
+* Must display "-1" at "numberOutput"
+* Click "decreaseButton" button
+* Must display "-2" at "numberOutput"
 
-A tear down step for every scenario
 ___
 * Clear local
+

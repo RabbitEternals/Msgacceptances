@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="end pain">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="echo test refactor">
       <change beforePath="$PROJECT_DIR$/specs/counters.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/counters.spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/echoxs.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/echoxs.spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/specs/flashcards.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/flashcards.spec" afterDir="false" />
@@ -54,7 +53,7 @@
       <workItem from="1637318189196" duration="4495000" />
       <workItem from="1637564083299" duration="93000" />
       <workItem from="1637735078960" duration="1540000" />
-      <workItem from="1637763773357" duration="3983000" />
+      <workItem from="1637763773357" duration="4349000" />
     </task>
     <task id="LOCAL-00001" summary="All structure">
       <created>1637321513534</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637564118865</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="echo test refactor">
+      <created>1637825024810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637825024810</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +120,7 @@
     <MESSAGE value="ignore ide files" />
     <MESSAGE value="Localhost was not localhost :)" />
     <MESSAGE value="end pain" />
-    <option name="LAST_COMMIT_MESSAGE" value="end pain" />
+    <MESSAGE value="echo test refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="echo test refactor" />
   </component>
 </project>

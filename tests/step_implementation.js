@@ -50,12 +50,15 @@ step("Clear local", async function () {
 step("Enter <word> to <field_id> textbox", async function (word,field_id) {
     await write(word,into(textBox({id:field_id})))
 });
+//ECHO--COUNTER
 step("Click <button_id> button", async function (button_id) {
     await click(button({id:button_id}),{navigationTimeout:3000})
 });
+//ECHO
 step("Verify <field_id> empty", async function (field_id) {
     assert.ok(await textBox({id:field_id}).value() == "")
 });
+//ECHO--COUNTER
 step("Must display <word> at <field_id>", async function (word,field_id) {
     var content = await evaluate($("#"+field_id), (element) => element.innerText);
     assert.ok(content == word)

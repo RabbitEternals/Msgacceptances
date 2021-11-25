@@ -1,7 +1,7 @@
 # Echo project test
 * Open localhost
 
-## Must display echo word
+## Should display echo word after typing it and clicking button
 * Enter "NoNoWord" to "inputField" textbox
 * Click "echoButton" button
 * Verify "inputField" empty
