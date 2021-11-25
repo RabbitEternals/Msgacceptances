@@ -46,26 +46,40 @@ step("Open localhost", async function () {
 step("Clear local", async function () {
     await evaluate(() => localStorage.clear());
 });
-//ECHO
+//ECHO--FLASHCARD
 step("Enter <word> to <field_id> textbox", async function (word,field_id) {
-    await write(word,into(textBox({id:field_id})))
+    await write(word,into(textBox({id:field_id})));
 });
-//ECHO--COUNTER
+//ECHO--COUNTER--FLASHCARD
 step("Click <button_id> button", async function (button_id) {
-    await click(button({id:button_id}),{navigationTimeout:3000})
+    await click(button({id:button_id}),{navigationTimeout:3000});
 });
-//ECHO
+//ECHO--FLASHCARD
 step("Verify <field_id> empty", async function (field_id) {
-    assert.ok(await textBox({id:field_id}).value() == "")
+    assert.ok(await textBox({id:field_id}).value() == "");
 });
-//ECHO--COUNTER
+//ECHO--COUNTER--FLASHCARD
 step("Must display <word> at <field_id>", async function (word,field_id) {
     var content = await evaluate($("#"+field_id), (element) => element.innerText);
     assert.ok(content == word)
 });
-//
-
-
+//FLASHCARD
+step("Must display <word> at <field_class> class", async function (word,field_class) {
+    var content = await evaluate($("."+field_class), (element) => element.textContent);
+    assert.ok(content == word)
+});
+//FLASHCARD
+step("Verify <field_id> exists", async function (field_id) {
+    assert.ok(await $("#"+field_id).exists());
+});
+//FLASHCARD
+step("Must not display <word> at anywhere", async function (word) {
+    assert.ok(await text(word).isVisible(0,0));
+});
+//FLASHCARD
+step("Click <field_id> field", async function (field_id) {
+    click($("#"+field_id));
+});
 
 /*
 step("Must display <message>", async function (message) {
