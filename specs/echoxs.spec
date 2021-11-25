@@ -1,12 +1,11 @@
-# Getting Started with Gauge
-This is a context step that runs before every scenario
+# Echo project test
 * Open localhost
 
-## Must display word
-* Add word "first echo" "Word here"
-* Click "Echo"
-* Must display "first echo"
+## Must display echo word
+* Enter "NoNoWord" to "inputField" textbox
+* Click "echoButton" button
+* Verify "inputField" empty
+* Must display "NoNoWord" at "outputField"
 
-A tear down step for every scenario
 ___
 * Clear local

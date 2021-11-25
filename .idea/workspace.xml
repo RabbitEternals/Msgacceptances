@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="Localhost was not localhost :)" />
+    <list default="true" id="e193cdab-6871-4347-af86-3c06d143b5ec" name="Changes" comment="end pain">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/counters.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/counters.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/echoxs.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/echoxs.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/flashcards.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/flashcards.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/ledger.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/ledger.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/shopping.spec" beforeDir="false" afterPath="$PROJECT_DIR$/specs/shopping.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/step_implementation.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/step_implementation.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +17,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="218MJ7f0mnFVL3xEyhiR072fTwH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,6 +31,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/specs" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -41,6 +52,9 @@
       <option name="presentableId" value="Default" />
       <updated>1637318187207</updated>
       <workItem from="1637318189196" duration="4495000" />
+      <workItem from="1637564083299" duration="93000" />
+      <workItem from="1637735078960" duration="1540000" />
+      <workItem from="1637763773357" duration="3983000" />
     </task>
     <task id="LOCAL-00001" summary="All structure">
       <created>1637321513534</created>
@@ -70,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637563520375</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="end pain">
+      <created>1637564118865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637564118865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,11 +107,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All structure" />
     <MESSAGE value="ignore ide files" />
     <MESSAGE value="Localhost was not localhost :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Localhost was not localhost :)" />
+    <MESSAGE value="end pain" />
+    <option name="LAST_COMMIT_MESSAGE" value="end pain" />
   </component>
 </project>
